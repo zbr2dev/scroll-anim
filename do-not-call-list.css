@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Gotham-Book.woff2") format("woff2"),
-    url("/fonts/Gotham-Book.woff") format("woff");
+  src: url("/fonts/Gotham.otf") format("opentype");
 }
 
 @font-face {
@@ -10,7 +9,8 @@
     url("/fonts/Cousine-Regular.woff") format("woff");
 }
 
-h1, p {
+h1,
+p {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -21,7 +21,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #403039;;
+  background-color: #403039;
   color: #ffffff;
   font-family: Gotham;
 }
@@ -77,7 +77,7 @@ body {
   position: absolute;
   left: 0;
   top: -10px;
-  content: '';
+  content: "";
   display: block;
   width: 34px;
   height: 2px;
@@ -89,7 +89,7 @@ body {
   position: absolute;
   left: 0;
   top: 10px;
-  content: '';
+  content: "";
   display: block;
   width: 34px;
   height: 2px;
@@ -97,7 +97,7 @@ body {
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.hamburger.hamburger-active .hamburger-line{
+.hamburger.hamburger-active .hamburger-line {
   background-color: transparent;
 }
 
@@ -113,7 +113,6 @@ body {
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-
 .language {
   height: 26px;
   width: 61px;
@@ -123,7 +122,7 @@ body {
   transform: rotate(90deg) translate(12px, 0px);
   margin-top: 57px;
 }
-  
+
 .language span {
   color: #ffffff;
   font-size: 13px;
@@ -138,10 +137,10 @@ body {
   /* height: 100vh; */
   display: flex;
   flex-wrap: wrap;
-  background-color:  #403039;
+  background-color: #403039;
 }
 
-.block-empty{
+.block-empty {
   width: 50%;
 }
 
@@ -169,7 +168,6 @@ body {
   font-family: Gotham;
   font-style: normal;
   padding-bottom: 80px;
-
 }
 .title-contact {
   font-weight: bold;
@@ -191,7 +189,7 @@ body {
   line-height: 15px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  padding-bottom: 10px;;
+  padding-bottom: 10px;
 }
 
 input:focus {
@@ -206,8 +204,8 @@ input:focus {
 }
 
 .form-input input {
-    width: 100%;
-    height: 37px;
+  width: 100%;
+  height: 37px;
 }
 
 .text {
@@ -234,7 +232,7 @@ input:focus {
 /*----- First Block for phones-------*/
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .mobile-container {
@@ -302,7 +300,6 @@ input:focus {
   display: flex;
   flex-direction: column;
   padding: 99px 76px 77px 136px;
-
 }
 
 .info-title-opacity {
@@ -318,7 +315,7 @@ input:focus {
 }
 
 .info-title:last-child {
-    padding-bottom: 73px;
+  padding-bottom: 73px;
 }
 
 .info-bottom {
@@ -327,13 +324,13 @@ input:focus {
 }
 
 .info-bottom-left-side {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-location-flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-location {
@@ -342,7 +339,7 @@ input:focus {
   justify-content: start;
 }
 
-.info-location svg{
+.info-location svg {
   margin-top: 3px;
 }
 
@@ -473,7 +470,6 @@ input:focus {
 }
 
 @media (max-width: 1024px) {
-
   .block-img {
     background-image: url("./images/Contact-tablet.png");
   }
@@ -484,7 +480,7 @@ input:focus {
     padding-bottom: 64px;
   }
   .title-contact {
-    font-size: 60px
+    font-size: 60px;
   }
   .info-container {
     background-image: url("./images/Rectangle-tablet.png");
@@ -505,7 +501,6 @@ input:focus {
 }
 
 @media (max-width: 624px) {
-
   .block-empty {
     width: 0;
   }
@@ -598,7 +593,10 @@ input:focus {
     z-index: 80;
   }
 }
-.disable-body-scroll{
+.disable-body-scroll {
   max-height: 100vh;
   overflow: hidden;
+}
+*::-webkit-scrollbar {
+  display: none;
 }

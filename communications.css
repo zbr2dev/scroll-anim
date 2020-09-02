@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Gotham";
-  src: url("/fonts/Gotham-Book.woff2") format("woff2"),
-    url("/fonts/Gotham-Book.woff") format("woff");
+  src: url("/fonts/Gotham.otf") format("opentype");
 }
 
 @font-face {
@@ -10,7 +9,8 @@
     url("/fonts/Cousine-Regular.woff") format("woff");
 }
 
-p, h1 {
+p,
+h1 {
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -21,7 +21,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #A33F1C;
+  background-color: #a33f1c;
   color: #ffffff;
   font-family: Gotham;
 }
@@ -87,7 +87,7 @@ body {
   position: absolute;
   left: 0;
   top: -10px;
-  content: '';
+  content: "";
   display: block;
   width: 34px;
   height: 2px;
@@ -99,7 +99,7 @@ body {
   position: absolute;
   left: 0;
   top: 10px;
-  content: '';
+  content: "";
   display: block;
   width: 34px;
   height: 2px;
@@ -107,7 +107,7 @@ body {
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.hamburger.hamburger-active .hamburger-line{
+.hamburger.hamburger-active .hamburger-line {
   background-color: transparent;
 }
 
@@ -155,7 +155,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
 }
 
 .empty-block {
@@ -190,7 +189,6 @@ body {
 
 .mobile {
   display: none;
-    
 }
 
 .mobile-container {
@@ -235,7 +233,7 @@ body {
   font-weight: normal;
 }
 
- /*-------Flex Content----------*/
+/*-------Flex Content----------*/
 .content-container {
   display: flex;
   height: 100%;
@@ -255,7 +253,7 @@ body {
   font-size: 25px;
 }
 
-.number{
+.number {
   opacity: 0.2;
 }
 
@@ -289,16 +287,16 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #782E14;
+  background-color: #782e14;
   padding: 0px 103px;
   /* line-height: 105%; */
 }
 
-.info-top{
+.info-top {
   display: flex;
   flex-direction: column;
   margin-top: 164px;
-  border-bottom: 1px solid rgb( 255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
 
 .info-title-opacity {
@@ -313,7 +311,7 @@ body {
 }
 
 .info-title:last-child {
-    padding-bottom: 73px;
+  padding-bottom: 73px;
 }
 
 .info-bottom {
@@ -338,8 +336,7 @@ body {
   justify-content: start;
 }
 
-
-.info-location svg{
+.info-location svg {
   margin-top: 3px;
 }
 
@@ -458,7 +455,6 @@ body {
   margin: 0;
 }
 
-
 #screen-left {
   position: fixed;
   top: -100%;
@@ -504,7 +500,6 @@ body {
 }
 
 @media (max-width: 624px) {
-
   .title h1 {
     font-size: 40px;
   }
@@ -520,7 +515,7 @@ body {
     display: block;
   }
   .right-side-container {
-    width: 100%
+    width: 100%;
   }
   .info-container {
     margin: 0px;
@@ -589,7 +584,10 @@ body {
     z-index: 80;
   }
 }
-.disable-body-scroll{
+.disable-body-scroll {
   max-height: 100vh;
   overflow: hidden;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
