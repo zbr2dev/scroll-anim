@@ -137,7 +137,7 @@ $(document).ready(() => {
       in: () => {
         screenFourLeft.animate(
           {
-            top: 0,
+            bottom: 0,
           },
           transitionDuration,
           transitionEasing
@@ -153,7 +153,7 @@ $(document).ready(() => {
       out: () => {
         screenFourLeft.animate(
           {
-            top: "-100%",
+            bottom: "-100%",
           },
           transitionDuration,
           transitionEasing
@@ -656,6 +656,7 @@ $(document).ready(() => {
     if (hasClass) {
       $(this).removeClass('hamburger-active');
       $('body').removeClass('disable-body-scroll');
+      $(".arrow").removeClass("arrow-rotated");
       
       if (mobileScreen) {
         mobileScreens[8].out();
@@ -665,6 +666,7 @@ $(document).ready(() => {
     } else {
       $(this).addClass('hamburger-active');
       $('body').addClass('disable-body-scroll');
+      $(".arrow").addClass("arrow-rotated");
       if (mobileScreen) {
         mobileScreens[8].in();
       } else {

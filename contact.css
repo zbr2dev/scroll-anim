@@ -200,13 +200,52 @@ input:focus {
 .form-input {
   padding: 0px 0px 51px 0px;
   width: 100%;
-  background-color: #403039;
-  opacity: 0.1;
 }
 
 .form-input input {
+  box-sizing: border-box;
+  background-color: #584c54;
+  border: none;
+  padding: 8px;
   width: 100%;
   height: 37px;
+  font-size: 16px;
+  font-family: Gotham !important;
+  color: white !important;
+}
+
+.form-input input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: white;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #584c54 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-input textarea:focus, input:focus, textarea:active {
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+
+.form-input textarea {
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #584c54;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
 }
 
 .text {
@@ -228,6 +267,10 @@ input:focus {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 /*----- First Block for phones-------*/
@@ -359,6 +402,13 @@ input:focus {
   font-size: 16px;
 }
 
+.info-location-text a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 121.5%;
+  font-family: Gotham;
+}
+
 .info-icons {
   width: 50%;
   display: flex;
@@ -419,7 +469,7 @@ input:focus {
 }
 
 .menu-nav-container {
-  padding-left: 40px;
+  /*padding-left: 40px;*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
