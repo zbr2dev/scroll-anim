@@ -295,7 +295,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #091D37;
+  background-color: #091d37;
   padding: 0px 103px;
 }
 
@@ -306,7 +306,7 @@ body {
   border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
 
-.info-top a{
+.info-top a {
   text-decoration: none;
   color: #ffffff;
   font-family: Gotham;
@@ -458,7 +458,7 @@ body {
   width: 100%;
 }
 
-.info svg {
+.info img {
   margin-right: 55px;
 }
 

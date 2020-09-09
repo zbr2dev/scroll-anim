@@ -233,7 +233,9 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.form-input textarea:focus, input:focus, textarea:active {
+.form-input textarea:focus,
+input:focus,
+textarea:active {
   color: #ffffff;
   text-decoration: none;
   outline: none;
@@ -494,7 +496,7 @@ button:focus {
   width: 100%;
 }
 
-.info svg {
+.info img {
   margin-right: 55px;
 }
 

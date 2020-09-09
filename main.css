@@ -326,7 +326,7 @@ body {
   width: 100%;
 }
 
-.info svg {
+.info img {
   margin-right: 55px;
 }
 
@@ -342,7 +342,6 @@ body {
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
-
   .main-block {
     background-image: url("./images/main-ipad.png");
   }

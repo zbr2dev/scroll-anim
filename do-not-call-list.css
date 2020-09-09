@@ -253,7 +253,6 @@ button:focus {
   outline: none;
 }
 
-
 /*----- First Block for phones-------*/
 
 .mobile {
@@ -474,7 +473,7 @@ button:focus {
   width: 100%;
 }
 
-.info svg {
+.info img {
   margin-right: 55px;
 }
 
