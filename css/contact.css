@@ -16,9 +16,11 @@ body {
   color: #ffffff;
   font-family: Gotham;
 }
+
 div[data-visible="0"] {
   display: none;
 }
+
 .overlay {
   z-index: 100;
   position: fixed;

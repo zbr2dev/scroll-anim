@@ -176,6 +176,7 @@ div[data-visible="0"] {
 }
 
 .title h1 {
+  word-break: break-word;
   font-size: 54px;
   padding-bottom: 38px;
 }
@@ -484,7 +485,7 @@ div[data-visible="0"] {
 
   .title h1 {
     hyphens: auto;
-    font-size: 60px;
+    font-size: 52px;
   }
 
   .first-block-bg {
