@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
   <body>
@@ -11,19 +11,21 @@
       <div class="main-block"></div>
       <div class="block first-block-bg" id="screen-one-left">
         <div class="title-container">
-          <p>Tell your story</p>
+          <p class="translated" data-name="screen_one">Tell your story</p>
         </div>
       </div>
       <div class="block second-block" id="screen-one-right"></div>
       <div class="block third-block-bg" id="screen-two-left">
         <div class="title-container">
-          <p>with clarity + conviction</p>
+          <p class="translated" data-name="screen_two">
+            with clarity + conviction
+          </p>
         </div>
       </div>
       <div class="block four-block" id="screen-two-right"></div>
       <div class="block five-block-bg" id="screen-three-left">
         <div class="title-container">
-          <p>Make an impact</p>
+          <p class="translated" data-name="screen_three">Make an impact</p>
         </div>
       </div>
       <div class="block six-block" id="screen-three-right">
@@ -37,7 +39,9 @@
       </div>
       <div class="block seven-block-bg" id="screen-four-left">
         <div class="title-container">
-          <p>on decision makers + influencers</p>
+          <p class="translated" data-name="screen_four">
+            on decision makers + influencers
+          </p>
         </div>
       </div>
       <div
@@ -48,7 +52,9 @@
       <div class="block nine-block" id="screen-five-left"></div>
       <div class="block ten-block-bg" id="screen-five-right">
         <div class="title-container">
-          <p>Discover new insights</p>
+          <p class="translated" data-name="screen_five">
+            Discover new insights
+          </p>
         </div>
       </div>
       <div
@@ -58,17 +64,23 @@
       ></div>
       <div class="block twelve-block-bg" id="screen-six-right">
         <div class="title-container">
-          <p>+ use date like never before</p>
+          <p class="translated" data-name="screen_six">
+            + use date like never before
+          </p>
         </div>
       </div>
       <div class="block thirteen-block-bg" id="screen-seven-left">
         <div class="title-container">
-          <p>To get new results...</p>
+          <p class="translated" data-name="screen_seven">
+            To get new results...
+          </p>
         </div>
       </div>
       <div class="block fourteen-block-bg" id="screen-seven-right">
         <div class="title-container">
-          <p>you have do something different</p>
+          <p class="translated" data-name="screen_eight">
+            you have do something different
+          </p>
         </div>
       </div>
       <div class="scroll">
@@ -78,14 +90,28 @@
         <div class="menu-bg" id="screen-eight-left"></div>
         <div class="menu-nav" id="screen-eight-right">
           <div class="menu-nav-container">
-            <a href="./communications.html">Communication</a>
-            <a href="./government.html">Government Relations</a>
-            <a href="./por.html">Public Opinion Research</a>
-            <a href="contact.html">Contact</a>
+            <a
+              href="./communications.html"
+              class="translated"
+              data-name="communications"
+              >Communication</a
+            >
+            <a
+              href="./government.html"
+              class="translated"
+              data-name="government"
+              >Government Relations</a
+            >
+            <a href="./por.html" class="translated" data-name="research"
+              >Public Opinion Research</a
+            >
+            <a href="./contact.html" class="translated" data-name="contact"
+              >Contact</a
+            >
             <div class="info">
               <a href="#">
                 <img
-                  src="/images/Phone Icon.png"
+                  src="images/Phone Icon.png"
                   style="width: 15px; height: 15px"
                 />
               </a>
@@ -213,14 +239,96 @@
               </div>
             </div>
             <div class="language">
-              <span>FR</span>
+              <a
+                href="#"
+                onclick="document.translate(window.localStorage.getItem('language') === 'en' ? 'fr' : 'en')"
+                class="translated"
+                data-name="lang"
+              >
+                FR
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div data-visible="0">
+      <p class="translation" data-name="screen_one" data-lang="en">
+        Tell your story
+      </p>
+      <p class="translation" data-name="screen_one" data-lang="fr">
+        Exposez votre enjeu
+      </p>
+      <p class="translation" data-name="screen_two" data-lang="en">
+        with clarity + conviction
+      </p>
+      <p class="translation" data-name="screen_two" data-lang="fr">
+        Avec clarté et conviction
+      </p>
+      <p class="translation" data-name="screen_three" data-lang="en">
+        Make an impact
+      </p>
+      <p class="translation" data-name="screen_three" data-lang="fr">
+        Ayez un impact
+      </p>
+      <p class="translation" data-name="screen_four" data-lang="en">
+        on decision makers + influencers
+      </p>
+      <p class="translation" data-name="screen_four" data-lang="fr">
+        Sur les dirigeants et les personnes d’influence
+      </p>
+      <p class="translation" data-name="screen_five" data-lang="en">
+        Discover new insights
+      </p>
+      <p class="translation" data-name="screen_five" data-lang="fr">
+        Développez de nouvelles connaissances
+      </p>
+      <p class="translation" data-name="screen_six" data-lang="en">
+        + use date like never before
+      </p>
+      <p class="translation" data-name="screen_six" data-lang="fr">
+        Et exploitez vos données comme jamais auparavant
+      </p>
+      <p class="translation" data-name="screen_seven" data-lang="en">
+        To get new results...
+      </p>
+      <p class="translation" data-name="screen_seven" data-lang="fr">
+        Afin d’obtenir des meilleurs résultats
+      </p>
+      <p class="translation" data-name="screen_eight" data-lang="en">
+        you have do something different
+      </p>
+      <p class="translation" data-name="screen_eight" data-lang="fr">
+        Il faut adopter une approche novatrice
+      </p>
+      <a class="translation" data-name="communications" data-lang="en"
+        >Communication</a
+      >
+      <a class="translation" data-name="communications" data-lang="fr"
+        >Communications</a
+      >
+      <a class="translation" data-name="government" data-lang="en"
+        >Government Relations</a
+      >
+      <a class="translation" data-name="government" data-lang="fr"
+        >Relation gouvernementales</a
+      >
+      <a class="translation" data-name="research" data-lang="en"
+        >Public Opinion Research</a
+      >
+      <a class="translation" data-name="research" data-lang="fr"
+        >Recherche sur opinion publique</a
+      >
+      <a class="translation" data-name="contact" data-lang="en">Contact</a>
+      <a class="translation" data-name="contact" data-lang="fr"
+        >Contactez-nous</a
+      >
+      <a class="translation" data-name="lang" data-lang="en"> FR </a>
+      <a class="translation" data-name="lang" data-lang="fr"> EN </a>
+    </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/translation.js"></script>
 </html>
